@@ -289,7 +289,7 @@ header {
     background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),url(image/wave-bkgd.jpg) no-repeat;
     color: white;
     background-size: cover;
-    background-position-y: -500px;
+    background-position-y: 103%;
     height: 300px;
     width: 100%;
     line-height: 30px;
