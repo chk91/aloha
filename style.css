@@ -53,6 +53,16 @@ img {
     width: 100%;
 }
 
+.screen-reader-text:focus {
+   clip: auto !important;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000; /* above all content */
+}
+
 
 /*HEADER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
@@ -150,7 +160,7 @@ header {
 .description {
     text-align: center;
     line-height: 40px;
-    padding: 5%;
+    padding: 5% 0;
 }
 
 .description p {
