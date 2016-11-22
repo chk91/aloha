@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Aloha</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="build/css/style.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+        crossorigin="anonymous">
 
 </head>
 
@@ -17,7 +16,7 @@
     <!--HEADER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 
 
-    <header class="container">
+    <header class="site-header">
 
         <div class="logo">
             <img src="image/aloha-logo.svg" alt="">
@@ -26,6 +25,7 @@
         <div class="cart">
             <img src="image/cart-icon.svg" alt="">
         </div>
+
 
         <div class="navBar">
             <ul>
@@ -38,16 +38,12 @@
 
     </header>
 
-    <!--NAV @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-
-
-
     <!--BANNER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 
     <section class="banner">
 
         <div class="bannerText container">
-            <h4 class="ralewayMed">NEW COLLECTION</h4>
+            <h4 class="ralewayMed">New Collection</h4>
             <h2>Spring/Summer 2016</h2>
         </div>
 
@@ -55,102 +51,92 @@
 
     <!--DESCRIPTION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 
-    <a name="about" id="about"></a>
-
     <section class="description container">
 
-        <h2 class="playFairItalic">Hand-Crafted <span class="playFairStrong">Styles</span></h2>
-        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
-
+        <div class="description-wrapper container">
+            <h2>Hand-Crafted <span class="heavy">Styles</span></h2>
+            <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or
+                sign-up for updates below.</p>
+        </div>
     </section>
 
     <!--CATEGORY @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 
-    <a name="category" id="category"></a>
+    <section class="category-wrapper">
 
-    <section class="category">
-
-        <ul class="categoryBox rMe">
-
-            <li class="mens"><a href="">MEN'S</a></li>
-
-            <li class="trends"><a href="">TRENDS</a></li>
-
-            <li class="glasses"><a href="">GLASSES</a></li>
-
-            <li class="sale"><a href="">SALE</a></li>
-
-            <li class="bags"><a href="">BAGS</a></li>
-
-            <li class="women"><a href="">WOMEN'S</a></li>
-
+        <ul class="categoryBox">
+            <li class="mens"><a class="product-name" href="">Men's</a></li>
+            <li class="trends product-wrapper"><a class="product-name" href="">Trends</a></li>
+            <li class="glasses product-wrapper"><a class="product-name" href="">Glasses</a></li>
+            <li class="sale product-wrapper"><a class="product-name" href="">Sale</a></li>
+            <li class="bags product-wrapper"><a class="product-name" href="">Bags</a></li>
+            <li class="women"><a class="product-name" href="">Women's</a></li>
         </ul>
 
     </section>
 
     <!--MOST LOVED@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-    <a name="featured" id="featured"></a>
 
     <section class="mostLoved container">
 
-        <h2 class="playFairItalic">Most-Loved <span class="playFairStrong">Products</span></h2>
+        <h2>Most-Loved <span class="heavy">Products</span></h2>
 
-        <div class="pictures carousel container" data-flickity>
+        <div class="pictures carousel container" data-flickity='{"cellAlign":"left","prevNextButtons": false, "contain": true}'>
 
-            <div class="CoverImage carousel-cell">
+            <div class="carousel-cell">
                 <img src="image/stretch-knit-dress.jpg" alt="Picture of Stretch Knit Dress">
-                <p>Dresses</p>
-                <h3>Stretch Knit Dress</h3>
-                <p class="raleway">$169.00</p>
+                <p class="productCategory">Dresses</p>
+                <p class="productName">Stretch Knit Dress</p>
+                <p class="price">$169.00</p>
             </div>
 
             <div class="carousel-cell">
                 <img src="image/cotton-blue-shirt.jpg" alt="Picture of Cotton Blue Shirt">
-                <p>Shirts</p>
-                <h3>Cotton Blue Shirt</h3>
-                <p class="raleway">$89.00</p>
+                <p class="productCategory">Shirts</p>
+                <p class="productName">Cotton Blue Shirt</p>
+                <p class="price">$89.00</p>
             </div>
 
             <div class="carousel-cell">
                 <img src="image/checked-stretch-dress.jpg" alt="Picture of Checked Stretch Dress">
-                <p>Dresses</p>
-                <h3>Checked Stretched Dress</h3>
-                <p class="raleway">$129.00</p>
+                <p class="productCategory">Dresses</p>
+                <p class="productName">Checked Stretched Dress</p>
+                <p class="price">$129.00</p>
             </div>
 
             <div class="carousel-cell">
                 <img src="image/blue-silk-dress.jpg" alt="Picture of Blue Silk Dress">
-                <p>Dresses</p>
-                <h3>Blue Silk Dress</h3>
-                <p class="raleway">$119.00</p>
+                <p class="productCategory">Dresses</p>
+                <p class="productName">Blue Silk Dress</p>
+                <p class="price">$119.00</p>
             </div>
 
             <div class="carousel-cell">
                 <img src="image/pink-dotted-dress.jpg" alt="Picture of Pink Dotted Dress">
-                <p>Dresses</p>
-                <h3>Pink Dotted Dress</h3>
-                <p class="raleway">$69.00</p>
+                <p class="productCategory">Dresses</p>
+                <p class="productName">Pink Dotted Dress</p>
+                <p class="price">$69.00</p>
             </div>
 
             <div class="carousel-cell">
                 <img src="image/demin-overall-shorts.jpg" alt="Picture of Denim Overall Shorts">
-                <p>Denim</p>
-                <h3>Denim Overall Shorts</h3>
-                <p class="raleway">$69.00</p>
+                <p class="productCategory">Denim</p>
+                <p class="productName">Denim Overall Shorts</p>
+                <p class="price">$69.00</p>
             </div>
 
             <div class="carousel-cell">
                 <img src="image/cotton-yellow-tshirt.jpg" alt="Picture of Cotton Yellow tshirt">
-                <p>Shirts</p>
-                <h3>Cotton Yellow Tshirt</h3>
-                <p class="raleway">$69.00</p>
+                <p class="productCategory">Shirts</p>
+                <p class="productName">Cotton Yellow Tshirt</p>
+                <p class="price">$69.00</p>
             </div>
 
             <div class="carousel-cell">
                 <img src="image/blue-hipster-backpack.jpg" alt="Picture of Blue Hipster Backpack">
-                <p>BAGS</p>
-                <h3>Blue Hipster Backpack</h3>
-                <p class="raleway">$69.00</p>
+                <p class="productCategory">Bags</p>
+                <p class="productName">Blue Hipster Backpack</p>
+                <p class="price">$69.00</p>
             </div>
 
         </div>
@@ -159,34 +145,32 @@
 
     <!--SUBSCRIBE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 
-    <a name="update" id="update"></a>
+    <section class="subscribe container">
+        <div class="subscribe-wrapper">
+            <h2>Sign-Up for <span class="heavy">Updates</span></h2>
+            <p>Stay updated on our latest product releases, be the first to find out about upcoming sales and get free style
+                tips from our blog. Unsubscribe at any time.</p>
 
-    <section class="subscribe ontainer">
 
-        <h2 class="playFairItalic">Sign-Up for <span class="playFairStrong">Updates</span></h2>
-        <p class="rMe">Stay updated on our latest product releases, be the first to find out about upcoming sales and get free style tips from our blog. Unsubscribe at any time.</p>
-
-
-        <form action="submit">
-            <div class="textWrapper">
-                <input id="email" aria-label="email" type="text" placeholder="Your Email" />
-                <button type='submit' class="subButton">Subscribe</button>
-            </div>
-        </form>
-
+            <form action="submitForm">
+                <div class="input-wrapper">
+                    <input class="email" aria-label="email" type="text" placeholder="Your Email" />
+                    <input type="submit" class="subButton" name="subscribe" value="Subscribe" />
+                </div>
+            </form>
+        </div>
 
     </section>
 
     <!--FOOTER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 
-    <footer>
+    <footer class="footer-wrapper container">
 
         <div class="footerInfo">
-            <p>2016 Aloha Apparel Co.<br>Powered by HTML and CSS.</p>
-            <br>
+            <p><span><i class="fa fa-copyright" aria-hidden="true"></i>
+ 2016 Aloha Apparel Co.</span><span>Powered by HTML and CSS.</span></p>
             <p>604-604-6040. <a href="mailto=info@alohaapparel.com">info@alohaapparel.com</a></p>
-            <br>
-            <p>1490 W Broadway<br>Vancouver, BC, Canada</p>
+            <p class="address"><span>1490 W Broadway</span><span>Vancouver, BC, Canada</span></p>
         </div>
 
         <div class="socialMedia">
@@ -224,10 +208,10 @@
             </ul>
 
 
-<script src="tota11y.min.js"></script>
-<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
-<script src="jquery-3.1.1.js"></script>
-<script src="mainJS.js"></script>
+            <script src="tota11y.min.js"></script>
+            <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+            <script src="jquery-3.1.1.js"></script>
+            <script src="mainJS.js"></script>
 
         </div>
 

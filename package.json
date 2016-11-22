@@ -1,0 +1,27 @@
+{
+  "name": "aloha",
+  "version": "1.0.0",
+  "description": "Aloha project is the first project from the front-end web development program at Red Academy. \r The project is built from what I have learned through the first 2 weeks into the program, using HTML, CSS, Javascript, Jquery. This is my first website that I ever built. There were and still are some difficulties learning and using the new languages, but it has been a fun experience and can't wait to tackle on new projects.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-coffee": "^2.3.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.16.4"
+  }
+}

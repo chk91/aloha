@@ -1,0 +1,50 @@
+.banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.2)100%), url(../../image/banner-girl.png) no-repeat center 75px, url(../../image/flower-bkgd.jpg);
+    background-size: cover, 150px 369px, cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+    @include desktop {
+        background-size: cover, 250px 615px, contain;
+        height: 550px;
+    }
+}
+
+.bannerText {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+    h4 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 2.5rem;
+
+        @include desktop {
+            font-size: 4rem;;
+        }
+    }
+}
+
+.description-wrapper {
+    line-height: 2;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+    }
+
+    @include tablet {
+        max-width: 720px;
+    }
+}
+
+.description {
+    text-align: center;
+    padding: 4rem 0;
+    
+}
