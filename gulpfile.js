@@ -57,7 +57,7 @@ gulp.task('serve', function () {
 
 gulp.task('watch', function(){
     gulp.watch("sass/*.scss", ['sass']);
-    gulp.watch("js/*.js", ['scripts','lint']);
+    gulp.watch("./js/*.js", ['scripts','lint']);
 });
 
 // ESLINT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -65,7 +65,9 @@ gulp.task('lint', function (){
  return gulp.src ('./js/*js')
  .pipe(plumber(plumberErrorHandler))
  .pipe(eslint())
+     .pipe(plumber(plumberErrorHandler))
  .pipe(eslint.format())
+     .pipe(plumber(plumberErrorHandler))
  .pipe(eslint.failAfterError());
 })
 
